@@ -7,6 +7,11 @@ namespace philre
 {
     public static class MailConverter
     {
+        /// <summary>
+        /// Convert EmailMessage to MailMessage
+        /// </summary>
+        /// <param name="msg">EWS EmailMessage</param>
+        /// <returns>MailMessage</returns>
         public static MailMessage ToMailMessage(this EmailMessage msg)
         {
             // Copy the fieds we need...
@@ -51,6 +56,11 @@ namespace philre
             return mailMessage;
         }
 
+        /// <summary>
+        /// Convert EWS attachment to System.Net.Mail.Attachment
+        /// </summary>
+        /// <param name="attachment">EWS attachment</param>
+        /// <returns>Attachment</returns>
         public static System.Net.Mail.Attachment ToAttachment(this Microsoft.Exchange.WebServices.Data.Attachment attachment)
         {
             MemoryStream contentStream = new MemoryStream();
@@ -85,8 +95,12 @@ namespace philre
             return result;
 
         }
-
-
+        
+        /// <summary>
+        /// Converts EmailAddress to MailAddress
+        /// </summary>
+        /// <param name="address"></param>
+        /// <returns></returns>
         public static MailAddress ToMailAddress(this EmailAddress address)
         {
             if (address == null)
@@ -96,6 +110,11 @@ namespace philre
             return new MailAddress(address.Address, address.Name);
         }
 
+        /// <summary>
+        /// Convert Importance to MailPriority
+        /// </summary>
+        /// <param name="importance"></param>
+        /// <returns></returns>
         public static MailPriority ToMailPriority(this Importance importance)
         {
 

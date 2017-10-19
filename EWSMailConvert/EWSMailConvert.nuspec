@@ -1,0 +1,17 @@
+<?xml version="1.0"?>
+<package >
+  <metadata>
+    <id>philre.EWSMailConvert</id>
+    <version>0.0.1</version>
+    <title>EWSMailConvert</title>
+    <authors>Philipp Resch</authors>
+    <owners>Philipp Resch</owners>
+    <licenseUrl>https://github.com/dapaxx/EWSMailConvert/blob/master/LICENSE</licenseUrl>
+    <projectUrl>https://github.com/dapaxx/EWSMailConvert</projectUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>Extensions methods to convert EmailMessage objects from EWS to System.Net.Mail.MailMessage objects</description>
+    <releaseNotes>Initial Release</releaseNotes>
+    <copyright>Copyright 2017 Philipp Resch</copyright>
+    <tags>ews exchange mail mailmessage emailmessage</tags>
+  </metadata>
+</package>
